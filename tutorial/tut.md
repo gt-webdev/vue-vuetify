@@ -1,3 +1,38 @@
+# Vuejs + Vuetify
+
+***For a more detailed explanation about this boilerplate, see the from scratch instructions below**
+
+## Setup
+
+- clone this repo, and open it in VsCode
+
+- You'll want to install the `Vueter` extension in VsCode
+  - syntax highlighting, snippets
+
+- run `npm install` to install dependencies
+
+## Running the app
+
+- run `npm start` to start the development server
+
+:+1:
+
+---
+
+## Add some stuff
+
+- Go to https://vuetifyjs.com/en/ and browse the components
+
+- We'll pick a couple
+
+
+
+
+
+<details>
+  <summary>From scratch instructions</summary>
+
+
 ---
 Initialize a git repo (version contorl is good)
 ```sh
@@ -185,3 +220,4 @@ npm i -D @babel/core @babel/preset-env
 
 Now run `npm start` again:
 
+</details>
