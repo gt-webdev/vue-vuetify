@@ -2,11 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
 module.exports = {
-  entry: './src/main.js',
+	entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'build.js',
@@ -33,17 +32,13 @@ module.exports = {
         },
       },
       {
-        test: /\.(html)$/,
+        test: /\.html$/,
         loader: 'raw-loader',
       },
       {
         test: /\.css$/,
         loader: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.styl(us)?$/,
-        loader: ['style-loader', 'css-loader', 'stylus-loader'],
-      },
+      }
     ],
   },
   devServer: {
