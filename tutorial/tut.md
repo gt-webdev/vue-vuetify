@@ -23,8 +23,102 @@
 
 - Go to https://vuetifyjs.com/en/ and browse the components
 
-- We'll pick a couple
+- We'll pick a couple of components, and paste them straight in the `<template>` tag
 
+For example, you can take this `Jumbotron` component
+
+![](2018-09-18-18-02-18.png)
+
+and view its source by clicking here:
+
+![](2018-09-18-18-03-34.png)
+...and paste it directly in your source:
+
+![](2018-09-18-18-05-01.png)
+
+>note:  we must have a `<v-app>` tag wrapping your app at the root level, like this:
+
+```html
+<template>
+<v-app>
+  ...
+</v-app>
+</template>
+```
+
+
+### Using `Vue` single-file-components:
+
+create another `.vue` file named `src/component.vue`, and paste the contents between `<v-app>` into its `<template>`
+
+For example for a Jumbotron:
+```html
+<template>
+  <v-jumbotron>
+    <v-container fill-height>
+      <v-layout align-center>
+        <v-flex>
+          <h3 class="display-3">Welcome to the site</h3>
+
+          <span class="subheading">Lorem ipsum dolor sit amet, pri veniam forensibus id. Vis maluisset molestiae id, ad semper lobortis cum. At impetus detraxit incorrupte usu, repudiare assueverit ex eum, ne nam essent vocent admodum.</span>
+
+          <v-divider class="my-3"></v-divider>
+
+          <div class="title mb-3">Check out our newest features!</div>
+
+          <v-btn
+            class="mx-0"
+            color="primary"
+            large
+          >
+            See more
+          </v-btn>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-jumbotron>
+</template>
+
+<script>
+export default {
+}
+</script>
+
+<style scoped>
+
+</style>
+
+```
+
+now modify your `App.vue` to look like this:
+```html
+<template>
+<v-app>
+	<Component/>
+</v-app>
+</template>
+
+<script>
+import Component from './component.vue'
+
+
+export default {
+	components: {
+		Component
+	}
+}
+</script>
+
+<style scoped>
+
+</style>
+
+```
+
+
+You're now making composable applications with `Vue`+`Vuetify` !
+
+:wave:
 
 
 
@@ -218,6 +312,6 @@ npm i -D @babel/core @babel/preset-env
 ```
 
 
-Now run `npm start` again:
+Now run `npm start` again
 
 </details>
