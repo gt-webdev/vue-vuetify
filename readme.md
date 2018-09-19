@@ -27,14 +27,14 @@
 
 For example, you can take this `Jumbotron` component
 
-![](2018-09-18-18-02-18.png)
+![](/tutorial/2018-09-18-18-02-18.png)
 
 and view its source by clicking here:
 
-![](2018-09-18-18-03-34.png)
+![](/tutorial/2018-09-18-18-03-34.png)
 ...and paste it directly in your source:
 
-![](2018-09-18-18-05-01.png)
+![](/tutorial/2018-09-18-18-05-01.png)
 
 >note:  we must have a `<v-app>` tag wrapping your app at the root level, like this:
 
@@ -265,13 +265,13 @@ add some scripts to your `package.json`, which allow you to run webpack
 
 run your development script: `npm start` and...errors:
 
-![](2018-09-18-15-41-09.png)
+![](/tutorial/2018-09-18-15-41-09.png)
 
 :+1:
 
 scroll up to see the real error:
 
-![](2018-09-18-15-57-00.png)
+![](/tutorial/2018-09-18-15-57-00.png)
 
 
 ---
